@@ -105,6 +105,7 @@ nodejs_not_found()
 echo "Display '$NODE_BINARY' version"
 $NODE_BINARY --version
 which $NODE_BINARY
+exit 2
 
 type $NODE_BINARY >/dev/null 2>&1 || nodejs_not_found
 
